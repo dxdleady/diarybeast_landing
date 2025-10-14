@@ -75,8 +75,7 @@ export function Hero() {
         <div
           className="relative w-16 h-16 md:w-20 md:h-20"
           style={{
-            filter: 'brightness(0) saturate(100%) invert(70%) sepia(98%) saturate(2476%) hue-rotate(160deg) brightness(103%) contrast(101%)',
-            dropShadow: '0 0 15px rgba(0, 229, 255, 0.5)'
+            filter: 'brightness(0) saturate(100%) invert(70%) sepia(98%) saturate(2476%) hue-rotate(160deg) brightness(103%) contrast(101%) drop-shadow(0 0 15px rgba(0, 229, 255, 0.5))'
           }}
         >
           <img
