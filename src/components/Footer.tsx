@@ -11,31 +11,61 @@ export function Footer() {
           {/* Center - Links */}
           <div className="flex flex-wrap gap-6 justify-center">
             <a
-              href="#"
+              href="https://x.com/_DiaryBeast"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:opacity-70 transition-all"
               style={{ color: 'var(--text-secondary)' }}
             >
               Twitter
             </a>
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1nubV7HVtVwNBdnDv_3jWaW6xyOMQxr42/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:opacity-70 transition-all"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Discord
+              Pitch
             </a>
             <a
-              href="#"
+              href="https://github.com/dxdleady/diarybeast_front"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:opacity-70 transition-all"
               style={{ color: 'var(--text-secondary)' }}
             >
               Docs
             </a>
+            <a
+              href="https://x.com/0x10Shabsh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-all"
+              style={{ color: 'var(--text-secondary)' }}
+            >
+              Contact me
+            </a>
           </div>
 
           {/* Right - Legal & Base */}
-          <div className="flex flex-wrap gap-6 justify-center md:justify-end">
-            <span style={{ color: 'var(--text-muted)' }}>Built on Base</span>
+          <div className="flex flex-wrap gap-6 justify-center md:justify-end items-center">
+            <div className="flex items-center gap-2">
+              <span style={{ color: 'var(--text-muted)' }}>Built on</span>
+              <a
+                href="https://base.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-70 transition-all flex items-center gap-1"
+              >
+                <img
+                  src="/assets/base.png"
+                  alt="Base"
+                  className="h-4 w-auto"
+                />
+                <span style={{ color: 'var(--text-secondary)' }}>Base</span>
+              </a>
+            </div>
             <a
               href="#"
               className="hover:opacity-70 transition-all"

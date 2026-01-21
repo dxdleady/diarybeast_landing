@@ -64,7 +64,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 py-16 relative">
       {/* Logo + Brand Name - Top Left */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
@@ -108,13 +108,39 @@ export function Hero() {
         </div>
       </motion.div>
 
-      {/* Launch App Button - Top Right */}
+      {/* Top Right - Links */}
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="absolute top-4 right-4 md:top-6 md:right-6"
+        className="absolute top-4 right-4 md:top-6 md:right-6 flex flex-col md:flex-row items-end md:items-center gap-3 md:gap-4"
       >
+        <a
+          href="https://sepolia.basescan.org/address/0xeA621096594d5D7E3b2232A4F38365AdA9D92c14"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block font-mono text-xs md:text-sm transition-all text-primary/80 hover:text-primary underline decoration-primary/60 hover:decoration-primary"
+          style={{ textDecorationColor: 'var(--color-primary)' }}
+          title="View contract on BaseScan"
+        >
+          0xeA62...92c14 (sepolia)
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1nubV7HVtVwNBdnDv_3jWaW6xyOMQxr42/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 md:px-6 md:py-3 bg-transparent hover:bg-primary/10 border border-primary/50 hover:border-primary rounded font-mono text-sm md:text-base transition-all text-primary"
+        >
+          Pitch
+        </a>
+        <a
+          href="https://x.com/0x10Shabsh"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 md:px-6 md:py-3 bg-transparent hover:bg-primary/10 border border-primary/50 hover:border-primary rounded font-mono text-sm md:text-base transition-all text-primary"
+        >
+          Contact me
+        </a>
         <a
           href="https://diarybeast-front.vercel.app"
           target="_blank"
@@ -126,7 +152,7 @@ export function Hero() {
         </a>
       </motion.div>
 
-      <div className="max-w-7xl w-full mx-auto pt-24 md:pt-32">
+      <div className="max-w-7xl w-full mx-auto pt-40 md:pt-48">
         {/* Headline and Description - Above Everything */}
         <div className="w-full text-center mb-12">
           {/* Headline */}

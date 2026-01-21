@@ -30,7 +30,7 @@ export function ConnectionSection() {
   return (
     <section
       ref={sectionRef}
-      className="min-h-[70vh] flex items-center justify-center px-6 py-16"
+      className="min-h-[70vh] flex items-center justify-center px-6 py-24"
     >
       <div className="max-w-6xl w-full mx-auto">
         <motion.h2
