@@ -171,12 +171,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-xl md:text-2xl mb-8"
+            className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto"
             style={{ color: 'var(--text-secondary)' }}
           >
-            Your private diary with a digital companion that evolves with you.
+            Most diary apps bore you to death or feel invasive. DiaryBeast is the middle ground.
             <br />
-            Write. Reflect. Earn DIARY tokens on Base. Your entries are encrypted—only you can read them.
+            <br />
+            Your Beast evolves as you progress through life paths—financial, creative, wellness, learning. Each path, its own story. AI shows you the patterns. Artists and communities create themed collections. Gamification that actually means something.
           </motion.p>
 
           {/* Footer tagline with logos */}
