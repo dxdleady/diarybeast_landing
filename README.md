@@ -1,88 +1,89 @@
 # DiaryBeast Landing Page
 
-Минималистичный landing page для DiaryBeast — Web3 дневника с геймификацией.
+A minimalist landing page for DiaryBeast — a gamified Web3 diary where your writing nurtures a virtual pet.
 
-## Stack
+## Tech Stack
 
-- **Vite** — быстрый dev server и build tool
+- **Vite** — fast dev server and build tool
 - **React 19** + **TypeScript**
-- **Tailwind CSS v4** — стилизация
-- **Framer Motion** — анимации
+- **Tailwind CSS v4** — styling
+- **Framer Motion** — animations
 
-## Разработка
+## Getting Started
 
 ```bash
-# Установка зависимостей
+# Install dependencies
 npm install
 
-# Dev server (http://localhost:5173)
+# Start dev server (http://localhost:5173)
 npm run dev
 
-# Production build
+# Build for production
 npm run build
 
-# Preview production build
+# Preview production build locally
 npm run preview
 ```
 
-## Деплой на Vercel
+## Deployment
 
-### Вариант 1: Через GitHub
+### Option 1: Via GitHub (Recommended)
 
-1. Push код в GitHub репозиторий
-2. Импортируй проект в Vercel: https://vercel.com/new
-3. Vercel автоматически определит Vite конфиг
-4. Deploy!
+1. Push your code to a GitHub repository
+2. Import the project at [vercel.com/new](https://vercel.com/new)
+3. Vercel auto-detects the Vite configuration
+4. Click Deploy
 
-### Вариант 2: Через Vercel CLI
+### Option 2: Via Vercel CLI
 
 ```bash
-# Установка Vercel CLI
+# Install Vercel CLI globally
 npm i -g vercel
 
-# Деплой
+# Deploy to preview
 vercel
 
-# Production deploy
+# Deploy to production
 vercel --prod
 ```
 
-## Структура
+## Project Structure
 
 ```
 src/
 ├── components/
-│   ├── Hero.tsx              # Главная секция с Beast
-│   ├── DemoModal.tsx         # Интерактивное демо
-│   ├── ConnectionSection.tsx # "You write → Beast grows"
-│   ├── Footer.tsx            # Футер с ссылками
-│   └── AsciiPet.tsx          # Компонент ASCII анимаций
+│   ├── Hero.tsx              # Main hero section with Beast
+│   ├── DemoModal.tsx         # Interactive demo (Feed/Play/Write)
+│   ├── ConnectionSection.tsx # "You write → Beast grows" section
+│   ├── Footer.tsx            # Footer with links
+│   └── AsciiPet.tsx          # ASCII pet animation component
 ├── lib/
-│   ├── ascii/                # ASCII анимации (cat/dog)
-│   └── utils.ts              # Утилиты (cn функция)
-├── App.tsx                   # Главный компонент
-└── index.css                 # Global стили + Tailwind
-
+│   ├── ascii/                # ASCII art animations (cat/dog)
+│   └── utils.ts              # Utilities (cn helper)
+├── App.tsx                   # Root component
+└── index.css                 # Global styles + Tailwind config
 ```
 
-## Фичи
+## Features
 
-- ✅ Анимированный ASCII Beast (дыхание, реакции)
-- ✅ Интерактивное Demo Modal (Feed/Play/Write)
-- ✅ Scroll reveal анимации
-- ✅ Responsive дизайн
-- ✅ Светлая тема (#FAFBFC фон)
-- ✅ Production-ready build
+- Animated ASCII Beast with breathing and reactions
+- Interactive demo modal (Feed / Play / Write)
+- Scroll-triggered reveal animations
+- Fully responsive design
+- Clean light theme
+- Production-ready
 
-## Дизайн
+## Design
 
-Основан на сценарии из `DiaryBeast-Landing-Simple.md`:
-- Минимализм в стиле football.fun
+Inspired by minimalist landing pages like football.fun:
 - One-screen understanding
 - Show, don't tell
 
-**Цветовая палитра:**
-- Background: `#FAFBFC`
-- Text primary: `#1F2937`
-- Accent (Beast green): `#00D395`
-- CTA (Base blue): `#0052FF`
+**Color Palette:**
+
+| Role | Color |
+|------|-------|
+| Background | `#FAFBFC` |
+| Primary text | `#1F2937` |
+| Accent (Beast green) | `#00D395` |
+| CTA (Base blue) | `#0052FF` |

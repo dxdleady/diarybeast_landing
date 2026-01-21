@@ -220,7 +220,7 @@ export function ConnectionSection() {
             Start your journey today. Your Beast is waiting.
           </p>
           <a
-            href="https://dapp.diarybeast.xyz"
+            href="https://dapp.diarybeast.xyz/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 md:px-8 md:py-4 bg-transparent hover:bg-primary/10 border border-primary rounded font-mono text-base md:text-lg transition-all font-bold text-primary"
